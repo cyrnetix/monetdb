@@ -1,0 +1,10 @@
+version: "3.8"
+services:
+  monetdb:
+    container_name: monetdb-reactphp-example
+    image: monetdb/monetdb
+    restart: unless-stopped
+    expose:
+      - 50000
+    ports:
+      - 50000:50000

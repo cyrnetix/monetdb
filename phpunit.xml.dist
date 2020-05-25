@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit
+	backupGlobals="false"
+	backupStaticAttributes="false"
+	cacheTokens="false"
+	convertErrorsToExceptions="true"
+	convertNoticesToExceptions="true"
+	convertWarningsToExceptions="true"
+	verbose="true"
+	processIsolation="false"
+	colors="true"
+    bootstrap="./vendor/autoload.php">
+	<testsuites>
+		<testsuite name="TestSuite">
+			<directory>./tests</directory>
+		</testsuite>
+	</testsuites>
+	<logging>
+		<log type="junit" target="build/logs/junit.xml" logIncompleteSkipped="false" />
+	</logging>
+	<php>
+		<const name="PHPUNIT" value="true" />
+        <env name="DB_HOST" value="127.0.0.1"/>
+        <env name="DB_PORT" value="50000"/>
+        <env name="DB_USER" value="monetdb" />
+        <env name="DB_PASSWD" value="monetdb" />
+        <env name="DB_DBNAME" value="voc" />
+	</php>
+</phpunit>

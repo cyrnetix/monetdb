@@ -1,0 +1,31 @@
+{
+    "name": "cyrnetix/monetdb",
+    "description": "Async MonetDB database client for ReactPHP. Based on ReactPHP MySQL Client",
+    "keywords": ["monetdb", "database", "async", "reactphp"],
+    "license": "MIT",
+    "require": {
+        "php": ">=7.3.0",
+        "evenement/evenement": "^3.0",
+        "react/event-loop": "^1.0",
+        "react/promise": "^2.7",
+        "react/promise-stream": "^1.1",
+        "react/promise-timer": "^1.5",
+        "react/socket": "^1.1",
+        "ext-json": "*"
+    },
+    "require-dev": {
+        "clue/block-react": "^1.2",
+        "phpunit/phpunit": "8.5.8",
+        "ext-zlib": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Cyrnetix\\MonetDB\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Cyrnetix\\Tests\\MonetDB\\": "tests"
+        }
+    }
+}
